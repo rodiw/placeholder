@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand|Work+Sans');
+/*
+
+font-family: 'Work Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Amatic SC', cursive;
+
+*/
+
 
 * {
     border: 1px solid red;
@@ -9,7 +17,7 @@ body {
     margin: 0;
 }
 
-nav {
+nav { 
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -17,10 +25,25 @@ nav {
     opacity: 0.8;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
     padding: 0px 20px;
-    
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.footer {
+        display: flex;
+        justify-content: center;
+        background-color: #1a1a1a;
+        opacity: 0.8;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
 }
