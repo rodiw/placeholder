@@ -17,12 +17,13 @@ body {
     margin: 0;
 }
 
-nav { 
+nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 15px 0px;
     background-color: #1a1a1a;
-    opacity: 0.8;
 }
 
 nav a {
@@ -53,11 +54,23 @@ form {
 }
 
 .container {
+    padding-top: 50px;
     display: flex;
     flex-flow: column wrap;
 }
 
+.jumbotron {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(118, 219, 118);
+    background-image: url('https://images.unsplash.com/photo-1507275029257-b8685a434432?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+    background-position: center;
+    filter: grayscale(100%);
+}
 
+.contact {
+    padding: 50px 0px;
+}
 
 .footer {
         display: flex;
