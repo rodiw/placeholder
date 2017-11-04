@@ -81,6 +81,9 @@ span {
     color: rgb(255, 136, 136);
 }
 
+.big-icon {
+    font-size: 128px;
+}
 .contact {
     padding: 50px 0px;
 }
@@ -89,7 +92,6 @@ span {
         display: flex;
         justify-content: center;
         background-color: #1a1a1a;
-        opacity: 0.8;
         font-family: 'Quicksand', sans-serif;
         color: white;
 }
