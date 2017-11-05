@@ -68,7 +68,13 @@ button:hover {
     background-color: rgb(218, 93, 93);
 
 }
-.inputStyle {
+.description-text {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 26px;
+}
+
+.input-style {
     border: none;
     padding: 5px;
     margin: 10px 0;
@@ -82,13 +88,13 @@ button:hover {
     transition: 0.5s linear;
 }
 
-.inputStyle:focus {
+.input-style:focus {
     outline: none;
     transform: scaleX(1.1);
     border-color: rgb(218, 93, 93);
 
 }
-.inputStyle::placeholder {
+.input-style::placeholder {
     color: rgba(255, 255, 255, 0.808);
 }
 
@@ -142,7 +148,7 @@ span {
     justify-content: space-around;
     align-content: space-between;
     width: 80%;
-    padding: 50px 0px;
+    padding-top: 50px;
 }
 
 .info-holder {
@@ -175,6 +181,9 @@ span {
     .headerText {
         font-size: 60px;
     }
+        .input-style {
+            width: 60%;
+        }
 }
 @media screen and (max-width: 840px) {
     .headerText {
@@ -190,6 +199,12 @@ span {
     }
     .info-holder {
         width: 80%;
+    }
+    .description-text {
+        font-size: 20px;
+    }
+    .input-style {
+        width: 70%;
     }
 
 }
@@ -222,6 +237,10 @@ span {
     .big-icon {
         font-size: 64px;
     }
+    .description-text {
+        font-size: 16px;
+    }
+
 
 }
 @media screen and (max-width: 420px) {
