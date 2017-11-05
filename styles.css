@@ -8,6 +8,9 @@ body {
     font-family: 'Work Sans', sans-serif; 
     color: #1a1a1a;  
 }
+span {
+    color: rgb(255, 136, 136);
+}
 
 nav {
     position: fixed;
@@ -39,6 +42,9 @@ form {
     flex-direction: column;
     align-items: center;
     flex-basis: auto;
+}
+textarea {
+    height: 10em;
 }
 
 button {
@@ -112,9 +118,6 @@ button:hover {
     -moz-transition: 0.5s linear;
     transition: 0.5s linear;
 }
-span {
-    color: rgb(255, 136, 136);
-}
 
 .big-icon {
     font-size: 128px;
@@ -164,20 +167,26 @@ span {
 }
 
 @media screen and (max-width: 1440px) {
-    .headerText {
+    .header-text {
         font-size: 80px;
+    }
+    .description-text {
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 1130px) {
-    .headerText {
+    .header-text {
         font-size: 60px;
     }
-        .input-style {
-            width: 60%;
-        }
+    .input-style {
+        width: 60%;
+    }
+    .description-text {
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 840px) {
-    .headerText {
+    .header-text {
         font-size: 48px;
     }
     .big-icon {
@@ -200,7 +209,7 @@ span {
 
 }
 @media screen and (max-width: 670px) {
-    .headerText {
+    .header-text {
         font-size: 36px;
     }
     nav {
@@ -213,17 +222,19 @@ span {
         padding: 15px 0px;
         background-color: #1a1a1a;
     }
+    nav div:nth-of-type(1) {
+        display: none;
+    }
     nav div:nth-of-type(2) {
-        margin-top: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     nav a {
-        padding: 5px;
+        padding: 0px 20px;
     }
     .container {
-        padding-top: 170px;
+        padding-top: 55px;
     }
     .big-icon {
         font-size: 64px;
@@ -231,11 +242,17 @@ span {
     .description-text {
         font-size: 16px;
     }
-
+    textarea {
+        height: 6em;
+    }
+    button {
+        padding: 5px 30px;
+        font-size: 20px;
+    }
 
 }
-@media screen and (max-width: 420px) {
-    .headerText {
-        font-size: 30px;
+@media screen and (max-width: 440px) {
+    .header-text {
+        font-size: 33px;
     }
 }
